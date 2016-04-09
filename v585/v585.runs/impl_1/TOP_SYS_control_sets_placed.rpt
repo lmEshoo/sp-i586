@@ -1,0 +1,378 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
+| Date         : Sat Apr 09 15:20:11 2016
+| Host         : Centauri-PC running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file TOP_SYS_control_sets_placed.rpt
+| Design       : TOP_SYS
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |   325 |
+| Minimum Number of register sites lost to control set restrictions |   684 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             137 |           87 |
+| No           | No                    | Yes                    |            2818 |         1273 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |            1603 |          683 |
+| Yes          | No                    | Yes                    |            5282 |         2366 |
+| Yes          | Yes                   | No                     |             172 |           92 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++---------------------+-------------------------------------------------------------------+-------------------------------------------+------------------+----------------+
+|     Clock Signal    |                           Enable Signal                           |              Set/Reset Signal             | Slice Load Count | Bel Load Count |
++---------------------+-------------------------------------------------------------------+-------------------------------------------+------------------+----------------+
+|  nolabel_line65/clk | wb_rom_ctl/read_latency_cnt                                       | wb_ram_ctl/psram_ctrlr_1/cntr_reg[14]_0   |                3 |              4 |
+|  nolabel_line65/clk | v586/ubiu/fsm_reg_0/Q_reg_inv_0                                   | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                1 |              4 |
+|  nolabel_line65/clk | v586/ucore/i_vliw/vliw_pc_reg_0/Q_reg_894                         | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                2 |              4 |
+|  nolabel_line65/clk | wb_ram_ctl/psram_ctrlr_1/Q_reg                                    | v586/ubiu/fsm_reg_0/Q_reg_27              |                2 |              4 |
+|  nolabel_line65/clk | wb_ram_ctl/psram_ctrlr_1/FSM_sequential_state[3]_i_1_n_2147161666 | wb_ram_ctl/psram_ctrlr_1/cntr_reg[14]_0   |                4 |              4 |
+|  nolabel_line65/clk | wb_rom_ctl/write_latency_cnt                                      | wb_ram_ctl/psram_ctrlr_1/cntr_reg[14]_0   |                2 |              4 |
+|  nolabel_line65/clk | v586/A16750/iA_reg[0]/n519                                        | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                3 |              4 |
+|  nolabel_line65/clk | v586/ucore/i_vliw/fsm_reg_3/Q_reg_30                              | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                2 |              4 |
+|  nolabel_line65/clk | v586/ucore/i_vliw/divr_reg_54/Q_reg_2                             |                                           |                4 |              4 |
+|  nolabel_line65/clk | v586/U8253/ucount1/mode_reg_1/Q_reg_6                             | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                3 |              5 |
+|  nolabel_line65/clk | v586/U8253/count2/mode_reg_1/Q_reg_5                              | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                3 |              5 |
+|  nolabel_line65/clk | v586/U8253/count3/mode_reg_0/Q_reg_8                              | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                4 |              5 |
+|  nolabel_line65/clk | v586/ubiu/fsm_reg_4/Q_reg_0                                       | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                4 |              5 |
+|  nolabel_line65/clk | v586/ucore/i_deco/inst_deco1_reg_125/Q_reg_2                      | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                5 |              5 |
+|  nolabel_line65/clk | v586/U8259/mas_init_byte_expected_reg_0/Q_reg_1                   | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                1 |              5 |
+|  nolabel_line65/clk | v586/ucore/i_deco/fsm_reg_1/Q_reg_1                               |                                           |                5 |              6 |
+|  nolabel_line65/clk | v586/A16750/iA_reg[2]/n527                                        | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                2 |              6 |
+|  nolabel_line65/clk | v586/ucore/i_vliw/writeio_data_reg_7/Q_reg_6                      | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                2 |              6 |
+|  nolabel_line65/clk | v586/ucore/i_vliw/writeio_data_reg_6/Q_reg_8                      | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                3 |              6 |
+|  nolabel_line65/clk | v586/ucore/i_vliw/writeio_data_reg_6/Q_reg_2                      | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                2 |              6 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n284                                        |                                           |                1 |              8 |
+|  nolabel_line65/clk | v586/U8253/count2/msb_write_reg/Q_reg_0                           | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                3 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n283                                        |                                           |                2 |              8 |
+|  nolabel_line65/clk | v586/U8253/count2/rw_mode_reg_0/Q_reg_0                           | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                3 |              8 |
+|  nolabel_line65/clk | v586/U8253/ucount1/msb_write_reg/Q_reg_0                          | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                4 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n282                                        |                                           |                1 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n281                                        |                                           |                5 |              8 |
+|  nolabel_line65/clk | v586/U8253/count3/rw_mode_reg_1/Q_reg_0                           | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                2 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n242                                        |                                           |                7 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n245                                        |                                           |                5 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n247                                        |                                           |                3 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n249                                        |                                           |                2 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n251                                        |                                           |                3 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n253                                        |                                           |                3 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n255                                        |                                           |                4 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n257                                        |                                           |                3 |              8 |
+|  nolabel_line65/clk | v586/ubiu/fsm_reg_0/Q_reg_23                                      |                                           |                5 |              8 |
+|  nolabel_line65/clk | v586/ubiu/fsm_reg_0/Q_reg_24                                      |                                           |                7 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n260                                        |                                           |                1 |              8 |
+|  nolabel_line65/clk | v586/ubiu/fsm_reg_1/Q_reg_27                                      |                                           |                6 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n262                                        |                                           |                5 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n263                                        |                                           |                4 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n264                                        |                                           |                3 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n265                                        |                                           |                1 |              8 |
+|  nolabel_line65/clk | v586/ubiu/fsm_reg_2/Q_reg_8                                       | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                4 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n280                                        |                                           |                1 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n266                                        |                                           |                2 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n267                                        |                                           |                3 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n268                                        |                                           |                1 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n269                                        |                                           |                4 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n271                                        |                                           |                3 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n272                                        |                                           |                4 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n273                                        |                                           |                1 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n274                                        |                                           |                2 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n275                                        |                                           |                1 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n276                                        |                                           |                5 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n277                                        |                                           |                1 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n278                                        |                                           |                2 |              8 |
+|  nolabel_line65/clk | v586/U8253/ucount1/rw_mode_reg_0/Q_reg_0                          | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                3 |              8 |
+|  nolabel_line65/clk | v586/A16750/iSCR_reg[0]/n529                                      | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                2 |              8 |
+|  nolabel_line65/clk | v586/ucore/i_deco/fpu_reg/Q_reg_9                                 | v586/ucore/i_deco/fsm_reg_0/Q_reg_0       |                2 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n290                                        |                                           |                4 |              8 |
+|  nolabel_line65/clk | v586/A16750/iA_reg[1]/n525                                        | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                3 |              8 |
+|  nolabel_line65/clk | v586/A16750/iA_reg[1]/Q_reg_0                                     | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                3 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n288                                        |                                           |                7 |              8 |
+|  nolabel_line65/clk | v586/A16750/State_reg[0]/Q_reg_0                                  | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                2 |              8 |
+|  nolabel_line65/clk | v586/write_reqff_reg/Q_reg_0                                      | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                6 |              8 |
+|  nolabel_line65/clk | v586/superIO_idx_reg_1/Q_reg_0                                    | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                4 |              8 |
+|  nolabel_line65/clk | v586/ucore/i_vliw/io_add_reg_3/Q_reg_0                            | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                4 |              8 |
+|  nolabel_line65/clk | v586/ucore/i_vliw/io_add_reg_8/Q_reg_0                            | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                5 |              8 |
+|  nolabel_line65/clk | v586/ucore/i_vliw/io_add_reg_0/Q_reg_9                            | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                2 |              8 |
+|  nolabel_line65/clk | v586/ucore/i_vliw/fsm_reg_4/Q_reg_291                             | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                3 |              8 |
+|  nolabel_line65/clk | v586/ucore/Itlb/fsm_reg_3/Q_reg_14                                | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                4 |              8 |
+|  nolabel_line65/clk | v586/ucore/i_vliw/vliw_pc_reg_4/Q_reg_525                         |                                           |                7 |              8 |
+|  nolabel_line65/clk | v586/A16750/iLCR_reg[7]/Q_reg_1                                   | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                2 |              8 |
+|  nolabel_line65/clk | v586/ucore/i_vliw/vliw_pc_reg_0/Q_reg_1117                        | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                5 |              8 |
+|  nolabel_line65/clk | v586/ucore/i_vliw/vliw_pc_reg_0/Q_reg_1116                        | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                7 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n286                                        |                                           |                1 |              8 |
+|  nolabel_line65/clk | v586/ucore/i_vliw/writeio_data_reg_6/Q_reg_9                      | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                2 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n285                                        |                                           |                1 |              8 |
+|  nolabel_line65/clk | v586/ucore/i_vliw/writeio_data_reg_6/Q_reg_6                      | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                2 |              8 |
+|  nolabel_line65/clk | v586/ucore/i_vliw/writeio_data_reg_6/Q_reg_3                      | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                2 |              8 |
+|  nolabel_line65/clk | v586/U8253/count3/msb_write_reg/Q_reg_1                           | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                2 |              8 |
+|  nolabel_line65/clk | v586/ucore/i_vliw/writeio_data_reg_4/Q_reg_6                      | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                2 |              8 |
+|  nolabel_line65/clk | v586/ucore/i_vliw/writeio_data_reg_4/Q_reg_1                      | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                6 |              8 |
+|  nolabel_line65/clk | wb_rom_ctl/sram_addr_bst                                          | wb_ram_ctl/psram_ctrlr_1/cntr_reg[14]_0   |                4 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n325                                        |                                           |                2 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n324                                        |                                           |                2 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n323                                        |                                           |                2 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n322                                        |                                           |                2 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n321                                        |                                           |                1 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n320                                        |                                           |                3 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n318                                        |                                           |                2 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n316                                        |                                           |                4 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n315                                        |                                           |                3 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n314                                        |                                           |                6 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n313                                        |                                           |                1 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n312                                        |                                           |                2 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n311                                        |                                           |                3 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n310                                        |                                           |                1 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n309                                        |                                           |                2 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n307                                        |                                           |                3 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n306                                        |                                           |                3 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n305                                        |                                           |                1 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n304                                        |                                           |                3 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n303                                        |                                           |                1 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n302                                        |                                           |                2 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n301                                        |                                           |                1 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n300                                        |                                           |                2 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n298                                        |                                           |                1 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n296                                        |                                           |                2 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n295                                        |                                           |                2 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n294                                        |                                           |                1 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n293                                        |                                           |                2 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n292                                        |                                           |                1 |              8 |
+|  nolabel_line65/clk | v586/A16750/UART_TXFF/n291                                        |                                           |                3 |              8 |
+|  nolabel_line65/clk | v586/ucore/Dtlb/fsm_reg_2/Q_reg_77                                | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                4 |             10 |
+|  nolabel_line65/clk | v586/ucore/i_vliw/vliw_pc_reg_4/Q_reg_116                         | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                8 |             10 |
+|  nolabel_line65/clk | v586/ucore/Dtlb/fsm_reg_2/Q_reg_21                                | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                5 |             10 |
+|  nolabel_line65/clk | v586/ucore/i_vliw/vliw_pc_reg_0/Q_reg_878                         |                                           |                6 |             10 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n354                                        |                                           |                3 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n355                                        |                                           |                4 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n356                                        |                                           |                4 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n358                                        |                                           |                4 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n359                                        |                                           |                3 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n360                                        |                                           |                3 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n361                                        |                                           |                5 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n362                                        |                                           |                3 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n363                                        |                                           |                4 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n364                                        |                                           |                4 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n366                                        |                                           |                4 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n368                                        |                                           |                9 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n369                                        |                                           |                4 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n370                                        |                                           |                7 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n371                                        |                                           |                4 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n372                                        |                                           |                4 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n373                                        |                                           |                5 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n374                                        |                                           |                2 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n376                                        |                                           |                4 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n378                                        |                                           |                5 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n379                                        |                                           |                3 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n381                                        |                                           |                3 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n382                                        |                                           |                3 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n383                                        |                                           |                3 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n384                                        |                                           |                4 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n385                                        |                                           |                4 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n387                                        |                                           |                6 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n388                                        |                                           |                2 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n389                                        |                                           |                5 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n390                                        |                                           |                3 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n391                                        |                                           |                5 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n392                                        |                                           |                5 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n393                                        |                                           |                7 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n394                                        |                                           |                3 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n396                                        |                                           |                6 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n398                                        |                                           |                2 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n399                                        |                                           |                5 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n400                                        |                                           |                3 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n401                                        |                                           |                4 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n402                                        |                                           |                6 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n403                                        |                                           |                4 |             11 |
+|  nolabel_line65/clk | v586/A16750/iRXFIFOClear_reg/n673                                 | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                3 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n380                                        |                                           |                5 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n320                                        |                                           |                6 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n323                                        |                                           |                6 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n325                                        |                                           |               10 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n327                                        |                                           |                5 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n329                                        |                                           |                4 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n331                                        |                                           |                6 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n333                                        |                                           |                3 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n335                                        |                                           |                3 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n338                                        |                                           |                5 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n340                                        |                                           |                3 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n341                                        |                                           |                6 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n342                                        |                                           |                4 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n343                                        |                                           |                2 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n344                                        |                                           |                3 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n345                                        |                                           |                3 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n346                                        |                                           |                3 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n347                                        |                                           |               10 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n349                                        |                                           |                3 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n350                                        |                                           |                7 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n351                                        |                                           |                4 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n352                                        |                                           |                3 |             11 |
+|  nolabel_line65/clk | v586/A16750/UART_RXFF/n353                                        |                                           |                3 |             11 |
+|  nolabel_line65/clk | v586/ucore/Dtlb/fsm_reg_2/Q_reg_19                                | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                8 |             12 |
+|  nolabel_line65/clk | v586/ucore/i_vliw/vliw_pc_reg_4/Q_reg_547                         | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                5 |             13 |
+|  nolabel_line65/clk | v586/ubiu/fsm_reg_1/Q_reg_39                                      | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               10 |             14 |
+|  nolabel_line65/clk | v586/ucore/i_vliw/vliw_pc_reg_0/Q_reg_1115                        | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               15 |             16 |
+|  nolabel_line65/clk | wb_ram_ctl/psram_ctrlr_1/temp16[15]_i_1_n_2147161666              |                                           |                6 |             16 |
+|  nolabel_line65/clk | v586/U8253/count3/output_latched_reg/Q_reg_1                      | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                4 |             16 |
+|  nolabel_line65/clk | v586/U8253/ucount1/output_latched_reg/Q_reg_1                     | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                4 |             16 |
+|  nolabel_line65/clk | v586/U8253/count2/output_latched_reg/Q_reg_1                      | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                4 |             16 |
+|  nolabel_line65/clk | v586/ucore/i_vliw/opc_reg_7/Q_reg_0                               |                                           |               16 |             16 |
+|  nolabel_line65/clk | v586/ucore/i_vliw/fsm_reg_3/Q_reg_31                              |                                           |               14 |             16 |
+|  nolabel_line65/clk | v586/ucore/i_vliw/fsm_reg_2/Q_reg_29                              | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               12 |             16 |
+|  nolabel_line65/clk | v586/ucore/i_vliw/fsm_reg_2/Q_reg_28                              | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               13 |             16 |
+|  nolabel_line65/clk | v586/ucore/i_vliw/vliw_pc_reg_4/Q_reg_527                         | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               14 |             16 |
+| ~nolabel_line65/clk |                                                                   |                                           |               11 |             18 |
+|  nolabel_line65/clk | v586/ucore/i_vliw/fsm_reg_4/Q_reg_118                             | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               17 |             19 |
+|  nolabel_line65/clk | v586/ubiu/fsm_reg_3/Q_reg_3                                       | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                6 |             22 |
+|  nolabel_line65/clk | v586/ubiu/cacheNX_reg_2/Q_reg_9                                   | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                5 |             22 |
+|  nolabel_line65/clk | v586/ucore/i_useq/last12_reg_3/Q_reg_0                            | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                6 |             22 |
+|  nolabel_line65/clk | v586/ucore/i_useq/tagA5_reg_23/Q_reg_69                           | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                6 |             22 |
+|  nolabel_line65/clk | v586/ucore/i_useq/tagA5_reg_23/Q_reg_2                            | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                5 |             22 |
+|  nolabel_line65/clk | v586/ucore/i_useq/last12_reg_1/Q_reg_129                          | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                6 |             22 |
+|  nolabel_line65/clk | v586/ucore/i_useq/last12_reg_0/Q_reg_65                           | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                5 |             22 |
+|  nolabel_line65/clk | v586/ucore/i_useq/last12_reg_0/Q_reg_452                          | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                6 |             22 |
+|  nolabel_line65/clk | v586/ucore/i_useq/last12_reg_0/Q_reg_324                          | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                6 |             22 |
+|  nolabel_line65/clk | v586/ucore/i_useq/last12_reg_0/Q_reg_259                          | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                6 |             22 |
+|  nolabel_line65/clk | v586/ubiu/cacheNX_reg_2/Q_reg_14                                  | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                6 |             22 |
+|  nolabel_line65/clk | v586/ubiu/cacheNX_reg_1/Q_reg_0                                   | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                5 |             22 |
+|  nolabel_line65/clk | v586/ubiu/cacheNX_reg_2/Q_reg_10                                  | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                7 |             22 |
+|  nolabel_line65/clk | v586/ucore/i_useq/tagA1_reg_23/Q_reg_22                           | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                7 |             22 |
+|  nolabel_line65/clk | v586/ubiu/cacheNX_reg_2/Q_reg_12                                  | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                6 |             22 |
+|  nolabel_line65/clk | v586/ubiu/cacheNX_reg_2/Q_reg_13                                  | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                6 |             22 |
+|  nolabel_line65/clk | v586/ubiu/cacheNX_reg_2/Q_reg_15                                  | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                7 |             22 |
+|  nolabel_line65/clk | v586/ucore/i_useq/tagA1_reg_23/Q_reg_21                           | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                6 |             22 |
+|  nolabel_line65/clk | v586/ucore/i_useq/last12_reg_0/Q_reg_194                          | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                6 |             22 |
+|  nolabel_line65/clk | v586/ucore/i_useq/last12_reg_3/Q_reg_1                            | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                4 |             22 |
+|  nolabel_line65/clk | wb_ram_ctl/psram_ctrlr_1/latch_addr                               | wb_ram_ctl/psram_ctrlr_1/cntr_reg[14]_0   |                6 |             23 |
+|  nolabel_line65/clk |                                                                   | wb_ram_ctl/psram_ctrlr_1/cntr_reg[14]_0   |                9 |             24 |
+|  nolabel_line65/clk | v586/ucore/Dtlb/pg_fault_reg/Q_reg_19                             | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               11 |             24 |
+|  nolabel_line65/clk | v586/ucore/i_deco/inst_deco1_reg_125/Q_reg_9                      | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               25 |             26 |
+|  nolabel_line65/clk | v586/ucore/Itlb/fsm_reg_2/Q_reg_22                                | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               12 |             28 |
+|  nolabel_line65/clk | v586/ubiu/fsm_reg_1/Q_reg_3                                       | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               15 |             28 |
+|  nolabel_line65/clk | v586/ucore/Itlb/nx_tab1_reg_1/Q_reg_0                             | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                6 |             29 |
+|  nolabel_line65/clk | v586/ucore/Itlb/fsm_reg_3/Q_reg_10                                | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                7 |             29 |
+|  nolabel_line65/clk | v586/ucore/Dtlb/fsm_reg_2/Q_reg_68                                | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                8 |             29 |
+|  nolabel_line65/clk | v586/ucore/Itlb/fsm_reg_3/Q_reg_11                                | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                6 |             29 |
+|  nolabel_line65/clk | v586/ucore/Dtlb/fsm_reg_2/Q_reg_66                                | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                6 |             29 |
+|  nolabel_line65/clk | v586/ucore/Dtlb/fsm_reg_2/Q_reg_65                                | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               10 |             29 |
+|  nolabel_line65/clk | v586/ucore/Dtlb/fsm_reg_2/Q_reg_63                                | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               11 |             29 |
+|  nolabel_line65/clk | v586/ucore/Itlb/fsm_reg_3/Q_reg_9                                 | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                9 |             29 |
+|  nolabel_line65/clk | v586/ucore/Dtlb/fsm_reg_2/Q_reg_54                                | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                9 |             29 |
+|  nolabel_line65/clk | v586/ucore/Itlb/fsm_reg_3/Q_reg_12                                | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                9 |             29 |
+|  nolabel_line65/clk | v586/ucore/Itlb/fsm_reg_3/Q_reg_45                                | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                8 |             29 |
+|  nolabel_line65/clk | v586/ucore/Itlb/fsm_reg_3/Q_reg_8                                 | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               12 |             29 |
+|  nolabel_line65/clk | v586/ucore/Dtlb/fsm_reg_2/Q_reg_53                                | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               16 |             29 |
+|  nolabel_line65/clk | v586/ucore/Itlb/fsm_reg_0/Q_reg_0                                 | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               15 |             29 |
+|  nolabel_line65/clk | v586/ucore/Dtlb/fsm_reg_2/Q_reg_52                                | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               11 |             29 |
+|  nolabel_line65/clk | v586/ucore/Itlb/fsm_reg_3/Q_reg_41                                | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               14 |             29 |
+|  nolabel_line65/clk | v586/ucore/Itlb/nx_tab1_reg_0/Q_reg_2                             | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                8 |             29 |
+|  nolabel_line65/clk | v586/ucore/Itlb/fsm_reg_3/Q_reg_35                                | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                8 |             29 |
+|  nolabel_line65/clk | v586/ucore/Itlb/fsm_reg_3/Q_reg_36                                | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               10 |             29 |
+|  nolabel_line65/clk | v586/ucore/Itlb/fsm_reg_3/Q_reg_37                                | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                9 |             29 |
+|  nolabel_line65/clk | v586/ucore/Itlb/fsm_reg_3/Q_reg_46                                | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                8 |             29 |
+|  nolabel_line65/clk | v586/ucore/Itlb/fsm_reg_3/Q_reg_47                                | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               12 |             29 |
+|  nolabel_line65/clk | v586/ucore/Dtlb/fsm_reg_2/Q_reg_61                                | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                7 |             29 |
+|  nolabel_line65/clk | v586/ucore/Dtlb/fsm_reg_2/Q_reg_59                                | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               11 |             29 |
+|  nolabel_line65/clk | v586/ucore/Dtlb/fsm_reg_2/Q_reg_58                                | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               10 |             29 |
+|  nolabel_line65/clk | v586/ucore/Dtlb/fsm_reg_2/Q_reg_57                                | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                8 |             29 |
+|  nolabel_line65/clk | v586/ucore/Dtlb/fsm_reg_2/Q_reg_56                                | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               11 |             29 |
+|  nolabel_line65/clk | v586/ucore/Itlb/fsm_reg_3/Q_reg_42                                | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               13 |             29 |
+|  nolabel_line65/clk | v586/ucore/Dtlb/fsm_reg_2/Q_reg_70                                | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               10 |             29 |
+|  nolabel_line65/clk | v586/ucore/Dtlb/fsm_reg_2/Q_reg_69                                | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                9 |             29 |
+|  nolabel_line65/clk | v586/ucore/Itlb/fsm_reg_3/Q_reg_38                                | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                9 |             29 |
+|  nolabel_line65/clk | v586/ucore/Dtlb/fsm_reg_2/Q_reg_55                                | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               11 |             29 |
+|  nolabel_line65/clk | v586/ucore/Dtlb/fsm_reg_2/Q_reg_62                                | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                9 |             29 |
+|  nolabel_line65/clk | v586/ucore/Itlb/fsm_reg_3/Q_reg_53                                | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               11 |             30 |
+|  nolabel_line65/clk | v586/ucore/Itlb/fsm_reg_3/Q_reg_55                                | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               11 |             30 |
+|  nolabel_line65/clk | v586/ucore/i_vliw/fsm_reg_4/Q_reg_154                             | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               22 |             30 |
+|  nolabel_line65/clk | v586/ucore/Dtlb/fsm_reg_0/Q_reg_2                                 | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               13 |             30 |
+|  nolabel_line65/clk | v586/ubiu/code_ack_slow_reg/Q_reg_13                              | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               15 |             30 |
+|  nolabel_line65/clk | v586/ucore/Dtlb/fsm_reg_0/Q_reg_0                                 | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               10 |             30 |
+|  nolabel_line65/clk | wb_ram_ctl/psram_ctrlr_1/Q_reg_0                                  |                                           |               12 |             31 |
+|  nolabel_line65/clk | v586/ucore/i_deco/inst_deco1_reg_127/Q_reg_2                      | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               25 |             31 |
+|  nolabel_line65/clk | v586/ubiu/fsmz_reg/fsmz                                           | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                6 |             32 |
+|  nolabel_line65/clk | v586/ubiu/tag2_reg_23/Q_reg_2                                     | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               20 |             32 |
+|  nolabel_line65/clk | v586/ucore/i_deco/inst_deco1_reg_104/Q_reg_3                      | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               26 |             32 |
+|  nolabel_line65/clk | v586/ucore/i_deco/inst_deco1_reg_121/Q_reg_2                      | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               17 |             32 |
+|  nolabel_line65/clk | v586/ucore/Dtlb/pg_fault_reg/nbus_12456[0]_512                    | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               16 |             32 |
+|  nolabel_line65/clk | v586/ucore/i_vliw/vliw_pc_reg_4/Q_reg_576                         | v586/ucore/i_vliw/vliw_pc_reg_4/Q_reg_577 |               32 |             32 |
+|  nolabel_line65/clk | v586/ucore/i_vliw/vliw_pc_reg_0/Q_reg_1112                        | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               27 |             32 |
+|  nolabel_line65/clk | v586/ucore/i_vliw/vliw_pc_reg_0/Q_reg_1113                        | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               29 |             32 |
+|  nolabel_line65/clk | v586/ucore/i_vliw/vliw_pc_reg_0/Q_reg_1119                        | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               27 |             32 |
+|  nolabel_line65/clk | v586/ucore/i_vliw/vliw_pc_reg_0/Q_reg_1173                        |                                           |               13 |             32 |
+|  nolabel_line65/clk | v586/ucore/i_vliw/vliw_pc_reg_0/Q_reg_1189                        | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               11 |             32 |
+|  nolabel_line65/clk | v586/ucore/i_vliw/vliw_pc_reg_4/Q_reg_248                         | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               29 |             32 |
+|  nolabel_line65/clk | v586/ucore/i_vliw/vliw_pc_reg_4/Q_reg_553                         | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               17 |             32 |
+|  nolabel_line65/clk | v586/ucore/i_vliw/vliw_pc_reg_4/Q_reg_562                         |                                           |               24 |             32 |
+|  nolabel_line65/clk | v586/ucore/i_vliw/vliw_pc_reg_4/Q_reg_565                         | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               13 |             32 |
+|  nolabel_line65/clk | v586/ucore/i_vliw/vliw_pc_reg_4/Q_reg_567                         | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               14 |             32 |
+|  nolabel_line65/clk | v586/ucore/i_vliw/fsm_reg_4/Q_reg_290                             |                                           |               11 |             32 |
+|  nolabel_line65/clk | v586/ucore/i_vliw/all_cnt_reg_2/Q_reg_14                          |                                           |               25 |             32 |
+|  nolabel_line65/clk | wb_ram_ctl/psram_ctrlr_1/fml_do[31]_i_1_n_2147161666              | wb_ram_ctl/psram_ctrlr_1/cntr_reg[14]_0   |                7 |             32 |
+|  nolabel_line65/clk | wb_rom_ctl/dat_o[31]_i_1_n_2147161666                             | wb_ram_ctl/psram_ctrlr_1/cntr_reg[14]_0   |               13 |             32 |
+|  nolabel_line65/clk | v586/ubiu/burst_idx_reg_0/Q_reg_0                                 | v586/ubiu/fsm_reg_3/Q_reg_281             |               17 |             32 |
+|  nolabel_line65/clk | v586/ucore/i_deco/intff_reg/Q_reg_0                               | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |                8 |             32 |
+|  nolabel_line65/clk | v586/bit_bang_reg_2/Q_reg_0                                       | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               11 |             32 |
+|  nolabel_line65/clk | v586/ucore/i_deco/inst_deco1_reg_127/Q_reg_7                      | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               28 |             32 |
+|  nolabel_line65/clk | v586/ubiu/burst_idx_reg_1/Q_reg_0                                 | v586/ubiu/fsm_reg_3/Q_reg_279             |               10 |             32 |
+|  nolabel_line65/clk | v586/ucore/i_deco/inst_deco1_reg_127/Q_reg_11                     | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               30 |             32 |
+|  nolabel_line65/clk | v586/ucore/i_deco/inst_deco1_reg_126/Q_reg_9                      | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               26 |             32 |
+|  nolabel_line65/clk | v586/ucore/i_deco/inst_deco1_reg_126/Q_reg_4                      | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               23 |             32 |
+|  nolabel_line65/clk | v586/ucore/i_deco/inst_deco1_reg_126/Q_reg_3                      | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               28 |             32 |
+|  nolabel_line65/clk | v586/ubiu/burst_idx_reg_1/Q_reg_1                                 | v586/ubiu/fsm_reg_3/Q_reg_280             |               15 |             32 |
+|  nolabel_line65/clk | v586/ucore/i_deco/inst_deco1_reg_126/Q_reg_12                     | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               26 |             32 |
+|  nolabel_line65/clk | v586/ubiu/fsm_reg_0/Q_reg_20                                      | v586/ubiu/fsm_reg_0/Q_reg_26              |               14 |             32 |
+|  nolabel_line65/clk | v586/ucore/i_deco/inst_deco1_reg_124/Q_reg_7                      | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               28 |             32 |
+|  nolabel_line65/clk | v586/ucore/i_vliw/vliw_pc_reg_4/Q_reg_471                         | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               14 |             32 |
+|  nolabel_line65/clk | v586/ucore/i_vliw/vliw_pc_reg_4/Q_reg_246                         | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               30 |             33 |
+|  nolabel_line65/clk | v586/ucore/Dtlb/fsm_reg_1/Q_reg_16                                | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               10 |             33 |
+|  nolabel_line65/clk | v586/ucore/i_useq/pc_pg_fault_reg/Q_reg_5                         | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               16 |             34 |
+|  nolabel_line65/clk | v586/ucore/Itlb/fsm_reg_3/Q_reg_56                                | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               18 |             36 |
+|  nolabel_line65/clk | wb_ram_ctl/psram_ctrlr_1/latch_data                               | wb_ram_ctl/psram_ctrlr_1/cntr_reg[14]_0   |               12 |             36 |
+|  nolabel_line65/clk | v586/ubiu/cacheNX_reg_2/Q_reg_11                                  | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               20 |             42 |
+|  nolabel_line65/clk | v586/ucore/i_vliw/had_lgjmp_reg/Q_reg_2                           | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               26 |             60 |
+|  nolabel_line65/clk | v586/ucore/i_vliw/vliw_pc_reg_0/Q_reg_1184                        |                                           |               38 |             64 |
+|  nolabel_line65/clk | v586/ucore/i_vliw/vliw_pc_reg_0/Q_reg_1185                        |                                           |               46 |             64 |
+|  nolabel_line65/clk | v586/ubiu/fsm_reg_0/Q_reg_25                                      | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               40 |             67 |
+|  nolabel_line65/clk | v586/ubiu/cacheNX_reg_2/Q_reg_6                                   | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               25 |             71 |
+|  nolabel_line65/clk | v586/ucore/i_deco/idx_deco_reg_0/Q_reg_0                          | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               53 |             81 |
+|  nolabel_line65/clk | v586/ucore/i_useq/addrshft_reg_4/Q_reg_29                         | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               61 |             88 |
+|  nolabel_line65/clk | v586/ucore/i_vliw/vliw_pc_reg_4/Q_reg_469                         | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               79 |             96 |
+|  nolabel_line65/clk | v586/ubiu/cacheNX_reg_2/Q_reg_4                                   | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               36 |            100 |
+|  nolabel_line65/clk |                                                                   |                                           |               76 |            119 |
+|  nolabel_line65/clk | v586/ucore/i_deco/fsm_reg_1/Q_reg_0                               | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               58 |            123 |
+|  nolabel_line65/clk | v586/ucore/i_useq/tagA5_reg_23/Q_reg_0                            | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               68 |            134 |
+|  nolabel_line65/clk | v586/ubiu/tag2_reg_23/Q_reg_11                                    | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               78 |            214 |
+|  nolabel_line65/clk | v586/ucore/i_deco/ififo_rvect1_reg_7/Q_reg_75                     | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               97 |            234 |
+|  nolabel_line65/clk | v586/ubiu/fsm_reg_1/Q_reg_29                                      | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |              101 |            242 |
+|  nolabel_line65/clk | v586/ubiu/cacheNX_reg_2/Q_reg_8                                   | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               87 |            256 |
+|  nolabel_line65/clk | v586/ubiu/fsm_reg_1/Q_reg_38                                      | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |               81 |            256 |
+|  nolabel_line65/clk |                                                                   | wb_ram_ctl/psram_ctrlr_1/Q_reg_5          |             1264 |           2794 |
++---------------------+-------------------------------------------------------------------+-------------------------------------------+------------------+----------------+
+
+
