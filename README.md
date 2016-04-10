@@ -9,4 +9,4 @@ soft processor core compatible with i586 instruction set(Intel Pentium) developp
     sudo screen /dev/ttyUSB1 115200
   
 ###Windows
-    use [PuTTY](http://www.putty.org/)
+  use <a href="http://www.putty.org/">PuTTY</a>
