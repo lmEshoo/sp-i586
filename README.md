@@ -8,6 +8,11 @@ soft processor core compatible with i586 instruction set(Intel Pentium) developp
 <p align="center">
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Intel_Pentium_arch.svg/800px-Intel_Pentium_arch.svg.png" width="480">
 </p>
+
+##to flash
+    use iMPACT in ISE
+##to generate and upload .bit
+    use Vivado
 ##to interact
 
 ### Linux
