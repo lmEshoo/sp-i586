@@ -20,3 +20,7 @@ soft processor core compatible with i586 instruction set(Intel Pentium) developp
   
 ###Windows
   use <a href="http://www.putty.org/">PuTTY</a>
+
+###Install drivers on Linux
+        cd <Vivado dir>/data/xicom/cable_drivers/lin64/install_script/install_drivers/
+        sudo ./install_drivers
