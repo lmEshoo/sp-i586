@@ -9,18 +9,4 @@ soft processor core compatible with i586 instruction set(Intel Pentium) developp
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Intel_Pentium_arch.svg/800px-Intel_Pentium_arch.svg.png" width="480">
 </p>
 
-##to flash
-    use iMPACT in ISE
-##to generate and upload .bit
-    use Vivado
-##to interact
 
-### Linux
-    sudo screen /dev/ttyUSB1 115200
-  
-###Windows
-  use <a href="http://www.putty.org/">PuTTY</a>
-
-###Install cable drivers on Linux
-        cd <Vivado dir>/data/xicom/cable_drivers/lin64/install_script/install_drivers/
-        sudo ./install_drivers
