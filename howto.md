@@ -12,7 +12,7 @@
   
   check out this [video](https://www.youtube.com/watch?v=aL9yMcLY_74)
 ##Uploading the bitstream
-  -   Add all rtl files to a new Vivado project
+  -   Add all `./rtl/` and `./xdc/`files to a new Vivado project
   -   Generate the `.bit` file 
   -   Implement the project and run hardware manger
   
