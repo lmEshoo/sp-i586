@@ -1,4 +1,5 @@
 ##Using buildroot
+Follow this tutorial if you would like to configure the kernel. current version of the VM has `.config` that adds python.
 
 ###manual
 only tested using Ubuntu 12.04
