@@ -1,0 +1,19 @@
+PROMGEN: Xilinx Prom Generator P.20131013
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o /home/leo/Desktop//spi_v586 -s 16384 -u 0000 /home/leo/Desktop/v10.1/TOP_SYS.bit -data_file up 400000 /home/leo/cpu/svn/v586/v586/trunk/bin/vmlinux.bin -data_file up 800000 /home/leo/cpu/svn/v586/v586/trunk/bin/root.bin -spi 
+
+PROM /home/leo/Desktop/spi_v586.prm map: Thu Aug 13 19:45:59 2015
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          16384K
+PROM start    0000:0000
+PROM end      00ff:ffff
+PROM checksum ae0b5bcb
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    003a:607b     Aug  8 20:00:02 2015 /home/leo/Desktop/v10.1/TOP_SYS.bit
+    0040:0000    005b:03f0     May  7 16:16:03 2015 /home/leo/cpu/svn/v586/v586/trunk/bin/vmlinux.bin
+    0080:0000    0098:0f14     May  7 16:16:08 2015 /home/leo/cpu/svn/v586/v586/trunk/bin/root.bin
