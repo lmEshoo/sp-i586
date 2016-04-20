@@ -85,6 +85,6 @@ using `.bit` + `.vmlinux.bin` + `root.bin.new` lets prepare a PROM.
   * Click **Ok**
 7.  Click on **Generate File**
   * Click **No**
-8.  `MCS` File should be generated, exit and re-enter ISE then Flash the SPI
+8.  `MCS` File should be generated, exit and re-enter ISE then [Flash the SPI](https://github.com/lmEshoo/sp-i586/blob/master/howto.md#to-flash)
 
 * TO CHECK
