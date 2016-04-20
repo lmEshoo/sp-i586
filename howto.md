@@ -10,7 +10,7 @@
 ##to flash
   `use iMPACT in ISE`
   
-  check out this [video](https://www.youtube.com/watch?v=aL9yMcLY_74)
+  check out this [video](https://youtu.be/aL9yMcLY_74?t=160)
 ##Uploading the bitstream
   -   Add all `./rtl/` and `./xdc/`files to a new Vivado project
   -   Generate the `.bit` file 
