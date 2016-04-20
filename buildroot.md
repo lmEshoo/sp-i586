@@ -1,5 +1,5 @@
 ##kernel configure
-We use [buildroot](https://buildroot.org/) to create our kernel.  Follow this tutorial if you would like to configure the kernel. current version of the VM has `.config` that adds python.
+We use [buildroot](https://buildroot.org/) to create our kernel. Follow this tutorial if you would like to configure the kernel. Current version of the VM has `.config` that adds python.
 
 ###manual
 only tested using Ubuntu 12.04
@@ -28,7 +28,7 @@ Click [here](http://lmeshoo.net/services/buildroot2016.html)
 
 preload your personal files/folders
 
-- go into `./bin` directory in the project and do:
+- go into `./bin/` directory in the project and do:
 
 - `cp root.bin initramfs.cpio.gz`
 
@@ -38,9 +38,9 @@ preload your personal files/folders
 
 - `cpio -idv < ../initramfs.cpio`
 
--  do what ever you want to add/modify file 
+- do what ever you want to add/modify file 
 
--  make sure permisions are `+rwx` everywhere `chmod -cR 777 *`
+- make sure permisions are `+rwx` everywhere `chmod -cR 777 *`
 
 - `find . | cpio -H newc -o > ../initramfs.cpio.new`
 
