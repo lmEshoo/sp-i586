@@ -28,25 +28,16 @@ Click [here](http://lmeshoo.net/services/buildroot2016.html)
 
 ###Preload your personal files/folders
 
-- Do into `./bin/` directory in the project and do:
-
-- `cp root.bin initramfs.cpio.gz`
-
-- `gunzip initram.cpio.gz`
-
-- `mkdir temp && cd temp`
-
-- `cpio -idv < ../initramfs.cpio`
-
-- Do what ever you want to add/modify file 
-
-- Make sure permisions are `+rwx` everywhere `chmod -cR 777 *`
-
-- `find . | cpio -H newc -o > ../initramfs.cpio.new`
-
-- `cd ..`
-
-- `cat initramfs.cpio.new | gzip > root.bin.new`
+1. Do into `./bin/` directory in the project 
+2. `cp root.bin initramfs.cpio.gz`
+3. `gunzip initram.cpio.gz`
+4. `mkdir temp && cd temp`
+5. `cpio -idv < ../initramfs.cpio`
+6. Do what ever you want to add/modify file 
+  * Make sure permisions are `+rwx` everywhere `chmod -cR 777 *`
+8. `find . | cpio -H newc -o > ../initramfs.cpio.new`
+9. `cd ..`
+10. `cat initramfs.cpio.new | gzip > root.bin.new`
 
 ###Rebuild `.mcs` file
 
@@ -54,15 +45,15 @@ using `.bit` + `.vmlinux.bin` + `root.bin.new` lets prepare a PROM.
 
 #####Configure:
 
-- Open iMPACT tool using ISE
-- Open a new project
-- Select **Prepare a PROM File** and click **Ok**
-- Select **Configure A Single FPGA** and click the arrow
-- Slect **128M** (this is 128... chip, then the size will be 16 (MB).)
-- **Add Storage** and click the arrow
-- Give the second field **Output File Name** a name
-- Check **No** on **Add Non-Configuration Data Files**
-- Click **Ok**
+1.  Open iMPACT tool using ISE
+2.  Open a new project
+3.  Select **Prepare a PROM File** and click **Ok**
+4.  Select **Configure A Single FPGA** and click the arrow
+5.  Slect **128M** (this is 128... chip, then the size will be 16 (MB).)
+6.  **Add Storage** and click the arrow
+7.  Give the second field **Output File Name** a name
+8.  Check **No** on **Add Non-Configuration Data Files**
+9.  Click **Ok**
  
 #####Pick Files
 
