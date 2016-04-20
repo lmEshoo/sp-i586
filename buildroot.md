@@ -48,7 +48,7 @@ Click [here](http://lmeshoo.net/services/buildroot2016.html)
 
 - `cat initramfs.cpio.new | gzip > root.bin.new`
 
-###rebuild `.mcs` file
+###Rebuild `.mcs` file
 
 using `.bit` + `.vmlinux.bin` + `root.bin.new` lets prepare a PROM.
 
@@ -64,4 +64,27 @@ using `.bit` + `.vmlinux.bin` + `root.bin.new` lets prepare a PROM.
 - Check **No** on **Add Non-Configuration Data Files**
 - Click **Ok**
  
+#####Pick Files
 
+1.  Click **Ok** on the pop up screen
+  * Find `.bit` file of the project
+2.  When it asks you to `Add a Device`
+  * Click **No**
+3.  When it asks you to `Add Data Files`
+  * Click **Yes**
+  * Give Start Address at `400000`
+  * Find your `vmlinux` file *
+4.  When it asks you to `Add Data Files`
+  * Click **Yes**
+  * Give Start Address at `800000`
+  * Find your `initramfs` file *
+5.  When it asks you to `Add Data Files`
+  * Click **No**
+6.  When it asks you to `Add Device`
+  * Click **No**
+  * Click **Ok**
+7.  Click on **Generate File**
+  * Click **No**
+8.  `MCS` File should be generated, exit and re-enter ISE then Flash the SPI
+
+* TO CHECK
