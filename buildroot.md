@@ -1,5 +1,5 @@
-##Using buildroot
-Follow this tutorial if you would like to configure the kernel. current version of the VM has `.config` that adds python.
+##kernel configure
+We use buildroot to create our kernel.  Follow this tutorial if you would like to configure the kernel. current version of the VM has `.config` that adds python.
 
 ###manual
 only tested using Ubuntu 12.04
@@ -24,4 +24,26 @@ only tested using Ubuntu 12.04
 
 Click [here](http://lmeshoo.net/services/buildroot2016.html)
 
-  
+##Preload data
+
+preload your personal files/folders
+
+- go into `./bin` directory in the project and do:
+
+- `cp root.bin initramfs.cpio.gz`
+
+- `gunzip initram.cpio.gz`
+
+- `mkdir temp && cd temp`
+
+- `cpio -idv < ../initramfs.cpio`
+
+-  do what ever you want to add/modify file , watchout for file acces right try to put +rwx anywhere
+
+- `find . | cpio -H newc -o > ../initramfs.cpio.new`
+
+- `cd ..`
+
+- `cat initramfs.cpio.new | gzip > root.bin.new`
+
+- rebuild `.mcs` file with `.bit` + `.vmlinux.bin` + `root.bin.new`
