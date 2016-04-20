@@ -38,7 +38,9 @@ preload your personal files/folders
 
 - `cpio -idv < ../initramfs.cpio`
 
--  do what ever you want to add/modify file , watchout for file acces right try to put +rwx anywhere
+-  do what ever you want to add/modify file 
+
+-  make sure permisions are `+rwx` everywhere `chmod -cR 777 *`
 
 - `find . | cpio -H newc -o > ../initramfs.cpio.new`
 
