@@ -4,21 +4,15 @@ We use [buildroot](https://buildroot.org/) to create our kernel. Follow this tut
 ###manual
 Only tested using Ubuntu 12.04
 
-  `apt-get update`
+1.  `apt-get update`
+2.  `apt-get install build-essentials`
+3.  `wget --no-check-certificate https://buildroot.org/downloads/buildroot-2016.02.tar.gz`
+4.  `cd buildroot*`
+5.  `make menuconfig`
+  * Save your work ~ this will generate a `.config` file
+6.  `make`
   
-  `apt-get install build-essentials`
-  
-  `wget --no-check-certificate https://buildroot.org/downloads/buildroot-2016.02.tar.gz`
-  
-  `cd buildroot*`
-  
-  `make menuconfig`
-  
-  Save your work ~ this will generate a `.config` file
-  
-  `make`
-  
-  Output files compressed and uncompressed will be in `/output/images/`
+Output files compressed and uncompressed will be in `/output/images/`
   
 ###Ubuntu 12.04 VM 
 
