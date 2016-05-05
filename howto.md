@@ -18,6 +18,12 @@
   
 ##to interact
 
+Make sure that the Nexys4 switches are in the same as the follwing:
+
+<p align="center">
+<img src="https://cloud.githubusercontent.com/assets/3256544/15060097/89689da8-12dc-11e6-8418-c2d733eda481.PNG" width="480"></br>
+</p>
+
 ###Linux
     sudo screen /dev/ttyUSB1 115200
   
