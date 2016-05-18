@@ -28,25 +28,25 @@ module debouncer(
     output reg O1
     );
     
-    reg [4:0]cnt0, cnt1;
+    reg [5:0]cnt0, cnt1;
     reg Iv0=0,Iv1=0;
     reg out0, out1;
     
 always@(posedge(clk))begin
     if (I0==Iv0)begin
-        if (cnt0==19)O0<=I0;
+        if (cnt0==23)O0<=I0;
         else cnt0<=cnt0+1;
       end
     else begin
-        cnt0<="00000";
+        cnt0<="000000";
         Iv0<=I0;
     end
     if (I1==Iv1)begin
-            if (cnt1==19)O1<=I1;
+            if (cnt1==23)O1<=I1;
             else cnt1<=cnt1+1;
           end
         else begin
-            cnt1<="00000";
+            cnt1<="000000";
             Iv1<=I1;
         end
     end
