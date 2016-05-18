@@ -1,3 +1,3 @@
-[submodule "fpga-cordic-method"]
-	path = fpga-cordic-method
-	url = https://github.com/lmEshoo/fpga-cordic-method
+[submodule "Keyboard"]
+	path = Keyboard
+	url = https://github.com/Digilent/Nexys4DDR/Projects/Keyboard
