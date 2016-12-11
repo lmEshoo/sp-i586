@@ -10,7 +10,7 @@ soft processor core compatible with i586 instruction set(Intel Pentium) developp
 </p>
 
 ##Walk-through Video
-<p>
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/2W1guyhCJuE?rel=0" frameborder="0" allowfullscreen></iframe>
-</p>
 
+
+<center>[![IMAGE ALT TEXT](http://img.youtube.com/vi/2W1guyhCJuE/0.jpg)](http://www.youtube.com/watch?v=2W1guyhCJuE "Walk-through")
+</center>
